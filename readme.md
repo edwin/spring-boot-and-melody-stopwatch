@@ -1,6 +1,6 @@
 # Sample Configuration to Monitor a Spring Boot App with Java Melody's Stopwatch
 
-The goal is to have measurements on how long doesit takes to run a specific part of the code, and display the result in `Java Melody` dashboard.
+The goal is to have measurements on how long does it take to run a specific part of the code, and display the result in `Java Melody` dashboard. 
 
 ## Configuration
 ```java
