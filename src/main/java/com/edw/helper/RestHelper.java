@@ -1,7 +1,6 @@
-package com.edw.service;
+package com.edw.helper;
 
 import net.bull.javamelody.Stopwatch;
-import org.springframework.stereotype.Service;
 
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -10,13 +9,13 @@ import java.net.http.HttpResponse;
 
 /**
  * <pre>
- *     com.edw.service.RestService
+ *     com.edw.helper.RestHelper
  * </pre>
  *
  * @author Muhammad Edwin < edwin at redhat dot com >
  * 10 Jan 2024 14:12
  */
-public class RestService {
+public class RestHelper {
     public void callRestAPIOne() {
         try (Stopwatch stopwatch = new Stopwatch("stopwatch-for-one-todo")) {
             try {

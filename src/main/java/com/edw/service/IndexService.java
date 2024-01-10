@@ -1,5 +1,6 @@
 package com.edw.service;
 
+import com.edw.helper.RestHelper;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,7 +14,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class IndexService {
 
-    private RestService restService = new RestService();
+    private RestHelper restService = new RestHelper();
 
     public void getRestClientOne() {
         restService.callRestAPIOne();
