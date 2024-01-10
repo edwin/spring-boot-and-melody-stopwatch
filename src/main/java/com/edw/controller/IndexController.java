@@ -1,8 +1,6 @@
 package com.edw.controller;
 
-import com.edw.service.RestService;
-import net.bull.javamelody.MonitoredWithSpring;
-import net.bull.javamelody.Stopwatch;
+import com.edw.service.IndexService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,13 +17,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
 
     @Autowired
-    private RestService restService;
+    private IndexService indexService;
 
     @GetMapping(path = "/hello")
     public String hello() {
-        restService.getRestClientOne();
-        restService.getRestClientTwo();
-        restService.getRestClientThree();
+        indexService.getRestClientOne();
+        indexService.getRestClientTwo();
+        indexService.getRestClientThree();
 
         return "good";
     }
